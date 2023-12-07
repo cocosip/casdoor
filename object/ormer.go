@@ -29,7 +29,9 @@ import (
 	xormadapter "github.com/casdoor/xorm-adapter/v3"
 	_ "github.com/denisenkom/go-mssqldb" // db = mssql
 	_ "github.com/go-sql-driver/mysql"   // db = mysql
-	_ "github.com/lib/pq"                // db = postgres
+	_ "github.com/godror/godror"
+	_ "github.com/lib/pq" // db = postgres
+	_ "github.com/mattn/go-oci8"
 	"github.com/xorm-io/core"
 	"github.com/xorm-io/xorm"
 	_ "modernc.org/sqlite" // db = sqlite
